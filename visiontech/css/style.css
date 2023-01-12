@@ -1,0 +1,1477 @@
+:root{
+    --top-color:#7f2727;
+    --gold-color:#d1b67e;
+    --pop:'Poppins', sans-serif;
+    --mon:'Montserrat', sans-serif;
+    --os:'Oswald', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Oswald:wght@500&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+.container{
+    max-width: 1435px;
+    margin: auto;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    background-color:var(--top-color);
+    padding:20px 10px;
+}
+header .top-nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+header .top-nav .top-text{
+    margin: auto;
+}
+header .top-nav p{
+    text-align: center !important;
+    font-size: 17px;
+    color: var(--gold-color);
+}
+.top-item select{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+}
+.top-item select,
+.top-item .fa-bag-shopping{
+    margin-right: 15px;
+}
+.top-item .fa-bag-shopping,
+.top-item .fa-user{
+    color: white;
+    font-size: 20px;
+} 
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    margin-top:20px;
+}
+.navbar .links{
+    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+    width:30%;   
+    padding-left: 20px;     
+}
+.navbar .links  .fa-facebook-f{
+    margin-right: 10px;
+}
+.navbar .logo{
+    width:20%;        
+}
+.navbar .search{
+    width:30%;        
+}
+.navbar .logo img{
+    width: 100%;
+    height: auto;
+}   
+.navbar .search{    
+    border: 1px solid black;
+    padding: 5px 10px;
+    height: 40px;
+    margin: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.search input{  
+    border:none;  
+    padding: 5px 5px;
+    width: 96%;
+}
+.navbar2 > ul {
+    padding: 0px 50px;
+    display:flex;   
+    list-style: none;
+    justify-content: center;
+    font-size: 25px;
+}
+.navbar2 > ul > li {
+    font-family: var(--mon);
+    font-size: 15px;
+    margin:10px 40px;
+}
+.main-banner .banner {
+    position:relative;
+}
+.main-banner .banner img{
+    width:100%;
+}
+.main-banner .banner .btn{
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);       
+}
+.main-banner .banner .baner-text {
+    position: relative;
+    text-shadow: 2px 2px var(--top-color);
+    bottom: 370px;
+    left: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.main-banner .banner .baner-text h1{
+    color: white;
+    font-size: 30px;
+}
+
+
+.main-banner .banner .btn button{
+    background-color: var(--gold-color);
+    color: var(--top-color);
+    width: 117px;
+    height: 43px;
+    border: none;  
+}
+
+.about-section{
+    display:block;
+    margin-top:50px;
+    padding:20px;
+}
+.about-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-div .about-content{
+    padding-top: 100px;
+    padding-left: 50px;
+    /* padding: 100px 50px; */
+
+    width:50%;
+}
+.about-content .about-head{
+    position: relative;
+}
+.about-content  h1{
+    font-size: 30px;
+    font-family: var(--mon);
+}
+.about-content  p{
+    width: 80%;
+    font-size: 20px;
+}
+
+.about-content .about-head::before {
+    content: '';
+    position: absolute;
+    background-color: var(--top-color);
+    width: 6.3%;
+    height: 2px;
+    left: 0;
+    top: -5px;
+    z-index: 1;
+}
+.about-content .about-head::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 1%;
+    height: 2px;
+    left: 65px;
+    top: -5px;
+    z-index: 2;
+}
+.about-img{
+    padding-top: 50px;
+    display: flex;
+    width:50%;
+    position: relative;
+}
+.about-img .img-1{
+    width:50%;
+    margin-right:10px;
+    position:absolute;  
+    left: 10%;  
+}
+.about-img .img-1 img{
+    width:500px;
+    height:50%;    
+}
+.about-img .img-2{
+    width:50%;
+    height:auto; 
+    position:absolute;   
+    top: 14%;
+}
+.about-img .img-2 img{
+    width:500px;
+    height:50%;
+}
+.readmorebtn{
+    background-color:var(--top-color);
+    padding: 16px 22px;
+    border:none;
+    color:white;
+    /* width: 15px; */
+    /* height: 15px; */
+    /* margin-top: 20px; */
+}
+
+.pro-section{
+    /* margin-top: 20%; */
+}
+.main-product{
+    padding-top: 100px;
+}
+.main-product .product-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-product .pro-head h1{
+    font-weight: 100;
+    font-size: 50px;
+    font-family: var(--mon);
+    text-align: center;
+    position:relative;
+}
+.main-product .pro-head h1::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 10%;
+    height: 2px;
+    left: 45%;
+    top: -15px;
+    z-index: 1;
+}
+.main-product .pro-head h1::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 2%;
+    height: 2px;
+    left: 51%;
+    top: -15px;
+    z-index: 2;
+}
+.main-product .pro-head span{
+    font-weight: 900;
+}
+.main-product .product-item .card{
+    width: 25%;
+    /* border: 2px solid red; */
+    padding: 0 10px;
+    margin-bottom: 100px;
+}
+.product-item .card img{
+    width: 100%;
+    
+}
+.main-product .product-item .card p {
+    font-size: 20px;
+    padding-top: 10px;
+    font-family: var(--pop);
+
+}
+.main-product .product-item .card h6{
+    font-size: 20px;
+    padding-top: 10px;
+    font-family: var(--pop);
+}
+.main-product .container .btn button{
+    background-color: var(--top-color);
+    color: white;
+    width: 105px;
+    height: 36px;
+    border: none;
+}
+.main-product .pro-head{
+    margin-bottom: 80px;
+}
+
+.main-product .btn{
+    display: flex;
+    justify-content: center;
+}
+
+.main-girl{
+    padding-top: 90px;
+}
+.main-girl .girl{
+    background-image: url("../images/Layer\ 2.png");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:755px;
+}
+.main-girl .girl{
+    padding-top: 100px;
+}
+.main-girl .girl{
+    padding-left: 50px;
+}
+
+.main-girl .girl p{
+    font-size: 17px;
+    color:white;
+    padding-left: 20px;
+    font-family: var(--mon);
+    width:20%;
+}
+.main-girl .girl h2{
+    padding-top: 60px;
+    color:white;
+    padding-left: 20px;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.main-girl .girl button{
+    background-color: white;
+    color: var(--top-color);
+    border: none;
+    width: 106px;
+    height: 34px;
+    /* padding-left: 100px; */
+}
+.main-girl .girl .girl-btn{
+    padding-left: 40px;
+}
+.main-girl .girl .icons{        
+    font-size: 41px;
+    color: white;
+    padding-top: 120px;
+    padding-left: 20px;
+    /* text-align: center; */
+}
+
+
+.discount-top{
+    padding-top: 80px;
+}
+.main-discount{
+    /* padding-top: 50px; */
+    background-color:  #d1b67e;    
+    padding-bottom: 4%;
+}
+.main-discount .discount{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.main-discount .discount .discount-text{
+    padding-top: 30px;
+}
+.main-discount .discount .discount-text h1{
+    padding-left: 20px;
+    color: var(--top-color);
+    font-family: var(--mon);
+}
+.main-discount .discount .discount-text p{
+    font-size: 17px;
+    font-family: var(--pop);
+    padding-top: 20px;
+}
+.main-discount .discount .discount-search{
+    padding-top: 52px;
+}
+.main-discount .discount .discount-search input{
+    padding-left: 20px;
+    width: 205px;
+    height: 40px;
+}
+.main-discount .discount .discount-search button{
+    width: 108px;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+
+
+.footer{
+    background-image: url("../images/footer-img.png");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 5%;
+    background-position: center center;
+    margin-top: -1px;
+
+}
+.footer .footer-parts{
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer .footer-1{
+    width:30%;      
+}
+.footer .footer-1 h3{
+    color:white;
+    font-family: var(--mon);
+} 
+.footer .footer-1 .footer-sec p{
+    padding-top: 20px;
+    color: var(--gold-color);
+    font-family: var(--pop);
+}
+
+/* .footer .footer-2{
+    width:60%;      
+} */
+.footer .footer-2  .footer-link{
+    padding: 122px 0;    
+    font-family: var(--pop);
+}  
+.footer .footer-2  .footer-link .insta-icon{
+    background-color: var(--gold-color);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+.main-footer .footer .footer-2 .footer-link p{
+    color: var(--gold-color);
+    width: 270px;
+    text-align: center;
+    font-size: 20px;
+}
+.footer .footer-2  .footer-link .fb-icon{
+    background-color: var(--gold-color);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+}
+.footer-link .insta-icon .fa-instagram{
+    font-size: 25px;
+    color: var(--top-color);
+}
+.footer-link .fb-icon .fa-facebook-f{
+    font-size: 25px;
+    color: var(--top-color);
+}
+.footer-link .icos{
+    display: flex;
+    margin-top: 25px;
+    justify-content: flex-start;
+    margin-left: 100px;  
+}
+.main-footer .footer .footer-2  .footer-link p{
+    color: var(--gold-color);
+    width: 270px;
+    text-align: center;
+}
+.footer .footer-2{
+    width:30%;      
+}
+.footer .footer-3{
+    width:20%;      
+}
+.footer .footer-3 h3{
+    color:white;
+    font-family: var(--mon);
+} 
+.footer .footer-3 .footer-sec p{
+    padding-top: 20px;
+    color: var(--gold-color);
+    font-family: var(--pop);
+}
+.main-footer .copyright-main{
+    background-color: black;
+    padding: 20px 20px;
+}
+.main-footer .copyright-main .copyright{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.copyright .design{
+    color: white;
+    font-family: var(--pop);
+}
+.copyright .copy{    
+    font-family: var(--pop);
+    color: white;
+    
+}
+.copyright .company-card{
+    display: flex;
+    color: white;
+}
+
+.company-card .rectangle{
+    background-color: white;
+    margin-right: 10px;
+    padding: 5px;
+    
+}
+.company-card .amex{
+    background-color: darkblue;
+}
+
+.rectangle img{
+    height: 10px;
+    width: auto;
+}
+
+
+@media(max-width:768px){  
+    .search input {
+        border: none;
+        padding: 5px 5px;
+        width: 90%;
+    }
+    .about-content .about-head::before {
+        content: '';
+        position: absolute;
+        background-color: var(--top-color);
+        width: 29.3%;
+        height: 2px;
+        left: 0;
+        top: -5px;
+        z-index: 1;
+    }
+    .main-product .product-item .card{
+        width: 50%;
+        /* border: 2px solid red; */
+        padding: 0 10px;
+        margin-bottom: 100px;
+    }
+    .main-girl .girl p{
+        color:white;
+        padding-left: 20px;
+        font-family: var(--mon);
+        width:100%;
+    }
+    .main-discount .discount .discount-text p{
+        padding-left:25px;
+        font-size: 17px;
+    }
+    .footer .footer-1 {
+        width: 100%;
+    }
+    .footer .footer-2{
+    width:100%;      
+    }
+    .footer .footer-3{
+        width:100%;      
+    }
+    .about-div .about-content{
+        width:100%;
+    }
+    .main-banner .banner .baner-text h1 {
+        color: white;
+        font-size: 10px;
+    }
+    .main-product .pro-head h1 {
+        font-weight: 100;
+        font-size: 26px;
+        font-family: var(--mon);
+        text-align: center;
+        position: relative;
+    }
+    .main-product .pro-head h1::after {
+        content: '';
+        position: absolute;
+        background-color: white;
+        width: 2%;
+        height: 2px;
+        left: 51%;
+        top: -15px;
+        z-index: 2;
+    }
+    .main-product .pro-head h1::before {
+        content: '';
+        position: absolute;
+        background-color: black;
+        width: 10%;
+        height: 2px;
+        left: 45%;
+        top: -15px;
+        z-index: 1;
+    }
+    .product-item .card img {
+        width: 100%;
+    }
+    .main-product .product-item .card p {
+        font-size: 13px;
+        padding-top: 10px;
+        font-family: var(--pop);
+    }
+    .main-product .product-item .card h6 {
+        font-size: 14px;
+        padding-top: 10px;
+        font-family: var(--pop);
+    }
+    .main-product .container .btn button {
+        background-color: var(--top-color);
+        color: white;
+        width: 81px;
+        height: 22px;
+        border: none;
+        font-size: 10px;
+    }
+    .about-img .img-1 {
+        width: 50%;
+        margin-right: 10px;
+        position: absolute;
+        left: 13%;
+    }
+    .main-girl .girl {
+        background-image: url(../images/Layer\ 2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px !important;
+    }
+    .readmorebtn {
+        background-color: var(--top-color);
+        padding: 0px 0px !important;
+        border: none;
+        color: white;
+        width: 66px;
+        height: 22px;
+        font-size: 8px;
+        /* margin-top: 20px; */
+    }
+    .main-girl .girl h2 {
+        padding-top: 60px;
+        color: white;
+        padding-left: 20px;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    .navbar2 > ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        font-size: 12px;
+    }
+    .main-discount .discount .discount-text h1 {
+        font-size: 20px;
+        padding-left: 20px;
+        color: var(--top-color);
+        font-family: var(--mon);
+    }
+    .main-discount .discount .discount-search input {
+        padding-left: 14px;
+        width: 174px;
+        height: 40px;
+    }
+    .main-discount .discount .discount-search button {
+        width: 104px;
+        height: 38px;
+        background-color: black;
+        color: white;
+        font-size: 13px;
+    }
+    header .top-nav p {
+        text-align: center !important;
+        font-size: 13px;
+        color: var(--gold-color);
+    }
+    .about-content  p{
+        width: 80%;
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width:425px){
+    header .top-item{
+        margin-left:auto;
+        margin-top: 10px;
+    }
+    .navbar .links{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width:20%;        
+    }
+    .navbar .logo{
+        width:50%;        
+    }
+    .navbar .search{
+        width:70%;        
+    }
+    .navbar2 > ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        font-size: 13px;
+    }
+    .search input {
+        border: none;
+        padding: 5px 5px;
+        width: 87%;
+    }
+    .about-content .about-head::before {
+        content: '';
+        position: absolute;
+        background-color: var(--top-color);
+        width: 29.3%;
+        height: 2px;
+        left: 0;
+        top: -5px;
+        z-index: 1;
+    }
+    .main-product .product-item .card{
+        width: 50%;
+        /* border: 2px solid red; */
+        padding: 0 10px;
+        margin-bottom: 100px;
+    }
+    .main-girl .girl p{
+        color:white;
+        padding-left: 20px;
+        font-family: var(--mon);
+        width:100%;
+    }
+    .main-discount .discount .discount-text p{
+        padding-left:25px;
+        font-size: 17px;
+    }
+    .footer .footer-1 {
+        width: 100%;
+        order:2;
+        margin-top: 76px;
+    }
+    .footer .footer-2{
+        width:100%;    
+        order:1;  
+        margin-top:10px;
+    }
+    .footer .footer-3{
+        width:100%;  
+        order:3; 
+        margin-top: 76px;   
+    }
+    .main-footer .footer .footer-2  .footer-link p{
+        color: var(--gold-color);
+        width: auto;
+        text-align: center;
+    }
+    .copyright .design{
+        width:100%;
+        color: white;
+        font-family: var(--pop);
+    }
+    .copyright .company-card {
+        display: flex;
+        color: white;
+        margin-top: 10px;
+    }
+    .about-div .about-content{
+        width:100%;
+    }
+    .pro-section {
+        margin-top: 70%;
+    }
+    .about-img{
+        width:100%;
+        margin-top: 20%;
+    }
+    .navbar2 > ul > li {
+        margin: 10px 5px;
+    }
+    .main-girl .girl {
+        background-image: url(../images/Layer\ 2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px !important;
+    }
+    .main-banner .banner .baner-text h1 {
+        color: white;
+        font-size: 10px;
+    }
+    .main-banner .banner .baner-text {
+        position: relative;
+        text-shadow: 2px 2px var(--top-color);
+        bottom: 94px;
+        left: 1px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-banner .banner .btn button {
+        background-color: grey;
+        color: var(--gold-color);
+        width: 81px;
+        height: 26px;
+        border: none;
+        font-size: 10px;
+    }
+    .navbar2 > ul > li {
+        font-size: 7px;
+        /* margin: 10px 40px; */
+    }
+    .about-img .img-1 img {
+        width: 287px;
+        height: 50%;
+    }
+    .about-img .img-2 img {
+        width: 285px;
+        height: 50%;
+    }
+    .about-img .img-2 {
+        width: 50%;
+        height: auto;
+        position: absolute;
+        top: 150%;
+        left: 25px;
+    }
+    .about-content p {
+        width: 100%;
+        font-size: 13px;
+    }
+    .about-section {
+        display: block;
+        margin-top: 50px;
+        padding: 0px;
+    }
+    .navbar .logo img {
+        width: 85%;
+        height: auto;
+    }
+    .main-product .pro-head h1 {
+        font-weight: 100;
+        font-size: 26px;
+        font-family: var(--mon);
+        text-align: center;
+        position: relative;
+    }
+    .main-product .pro-head h1::after {
+        content: '';
+        position: absolute;
+        background-color: white;
+        width: 2%;
+        height: 2px;
+        left: 51%;
+        top: -15px;
+        z-index: 2;
+    }
+    .main-product .pro-head h1::before {
+        content: '';
+        position: absolute;
+        background-color: black;
+        width: 10%;
+        height: 2px;
+        left: 45%;
+        top: -15px;
+        z-index: 1;
+    }
+    .product-item .card img {
+        width: 100%;
+    }
+    .main-product .product-item .card p {
+        font-size: 13px;
+        padding-top: 10px;
+        font-family: var(--pop);
+    }
+    .main-product .product-item .card h6 {
+        font-size: 14px;
+        padding-top: 10px;
+        font-family: var(--pop);
+    }
+    .main-product .container .btn button {
+        background-color: var(--top-color);
+        color: white;
+        width: 90px;
+        height: 30px;
+        border: none;
+        font-size: 10px;
+    }
+    .about-img .img-1 {
+        width: 50%;
+        margin-right: 10px;
+        position: absolute;
+        left: 14%;
+    }
+    .readmorebtn {
+        background-color: var(--top-color);
+        padding: 0px 0px !important;
+        border: none;
+        color: white;
+        width: 90px;
+        height: 30px;
+        font-size: 8px;
+        /* margin-top: 20px; */
+    }
+    .main-girl .girl h2 {
+        padding-top: 60px;
+        color: white;
+        padding-left: 20px;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    .main-discount .discount .discount-text h1 {
+        font-size: 20px;
+        padding-left: 20px;
+        color: var(--top-color);
+        font-family: var(--mon);
+    }
+    .main-discount .discount .discount-search input {
+        padding-left: 14px;
+        width: 174px;
+        height: 40px;
+    }
+    .main-discount .discount .discount-search button {
+        width: 104px;
+        height: 38px;
+        background-color: black;
+        color: white;
+        font-size: 13px;
+    }
+    header .top-nav p {
+        text-align: center !important;
+        font-size: 13px;
+        color: var(--gold-color);
+    }
+    .about-content  p{
+        width: 80%;
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width:375px){
+    header .top-item{
+        margin-left:auto;
+    }
+    .navbar .links{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width:20%;        
+    }
+    .navbar .logo{
+        width:50%;        
+    }
+    .navbar .search{
+        width:70%;        
+    }
+    .navbar2 > ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        font-size: 13px;
+    }
+    .search input {
+        border: none;
+        padding: 5px 5px;
+        width: 90%;
+    }
+    .about-content .about-head::before {
+        content: '';
+        position: absolute;
+        background-color: var(--top-color);
+        width: 29.3%;
+        height: 2px;
+        left: 0;
+        top: -5px;
+        z-index: 1;
+    }
+    .main-product .product-item .card{
+        width: 50%;
+        /* border: 2px solid red; */
+        padding: 0 10px;
+        margin-bottom: 100px;
+    }
+    .main-girl .girl p{
+        color:white;
+        padding-left: 20px;
+        font-family: var(--mon);
+        width:100%;
+    }
+    .main-discount .discount .discount-text p{
+        padding-left:25px;
+    }
+    .footer .footer-1 {
+        width: 100%;
+        order:2;
+        margin-top: 76px;
+    }
+    .footer .footer-2{
+        width:100%;    
+        order:1;  
+        margin-top:10px;
+    }
+    .footer .footer-3{
+        width:100%;  
+        order:3; 
+        margin-top: 76px;   
+    }
+    .main-footer .footer .footer-2  .footer-link p{
+        color: var(--gold-color);
+        width: auto;
+        text-align: center;
+    }
+    .copyright .design{
+        width:100%;
+        color: white;
+        font-family: var(--pop);
+    }
+    .copyright .company-card {
+        display: flex;
+        color: white;
+        margin-top: 10px;
+    }
+    .about-div .about-content{
+        width:100%;
+    }
+    .pro-section {
+        margin-top: 70%;
+    }
+    .about-img{
+        width:100%;
+        margin-top: 20%;
+    }
+    .navbar2 > ul > li {
+        margin: 10px 5px;
+    }
+    .main-girl .girl {
+        background-image: url(../images/Layer\ 2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px !important ;
+    }
+    .main-banner .banner .baner-text h1 {
+        color: white;
+        font-size: 10px;
+    }
+    .main-banner .banner .baner-text {
+        position: relative;
+        text-shadow: 2px 2px var(--top-color);
+        bottom: 94px;
+        left: 1px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-banner .banner .btn button {
+        background-color: grey;
+        color: var(--gold-color);
+        width: 81px;
+        height: 26px;
+        border: none;
+        font-size: 10px;
+    }
+    .navbar2 > ul > li {
+        font-size: 7px;
+        /* margin: 10px 40px; */
+    }
+    .about-img .img-1 img {
+        width: 287px;
+        height: 50%;
+    }
+    .about-img .img-2 img {
+        width: 285px;
+        height: 50%;
+    }
+    .about-img .img-2 {
+        width: 50%;
+        height: auto;
+        position: absolute;
+        top: 150%;
+        left: 10px;
+    }
+    .about-content p {
+        width: 100%;
+        font-size: 13px;
+    }
+    .about-section {
+        display: block;
+        margin-top: 50px;
+        padding: 0px;
+    }
+    .navbar .logo img {
+        width: 85%;
+        height: auto;
+    }
+    .main-product .pro-head h1 {
+        font-weight: 100;
+        font-size: 26px;
+        font-family: var(--mon);
+        text-align: center;
+        position: relative;
+    }
+    .main-product .pro-head h1::after {
+        content: '';
+        position: absolute;
+        background-color: white;
+        width: 2%;
+        height: 2px;
+        left: 51%;
+        top: -15px;
+        z-index: 2;
+    }
+    .main-product .pro-head h1::before {
+        content: '';
+        position: absolute;
+        background-color: black;
+        width: 10%;
+        height: 2px;
+        left: 45%;
+        top: -15px;
+        z-index: 1;
+    }
+    .product-item .card img {
+        width: 100%;
+    }
+    .main-product .product-item .card p {
+        font-size: 13px;
+        padding-top: 10px;
+        font-family: var(--pop);
+    }
+    .main-product .product-item .card h6 {
+        font-size: 14px;
+        padding-top: 10px;
+        font-family: var(--pop);
+    }
+    .main-product .container .btn button {
+        background-color: var(--top-color);
+        color: white;
+        width: 81px;
+        height: 22px;
+        border: none;
+        font-size: 10px;
+    }
+    .about-img .img-1 {
+        width: 50%;
+        margin-right: 10px;
+        position: absolute;
+        left: 13%;
+    }
+    .readmorebtn {
+        background-color: var(--top-color);
+        padding: 0px 0px !important;
+        border: none;
+        color: white;
+        width: 66px;
+        height: 22px;
+        font-size: 8px;
+      
+    }
+    .main-girl .girl h2 {
+        padding-top: 60px;
+        color: white;
+        padding-left: 20px;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    .main-discount .discount .discount-text h1 {
+        font-size: 20px;
+        padding-left: 20px;
+        color: var(--top-color);
+        font-family: var(--mon);
+    }
+    .main-discount .discount .discount-search input {
+        padding-left: 14px;
+        width: 174px;
+        height: 40px;
+    }
+    .main-discount .discount .discount-search button {
+        width: 104px;
+        height: 38px;
+        background-color: black;
+        color: white;
+        font-size: 13px;
+    }
+    header .top-nav p {
+        text-align: center !important;
+        font-size: 13px;
+        color: var(--gold-color);
+    }
+    .about-content  p{
+        width: 80%;
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width:320px){
+    header .top-item{
+        margin-left:auto;
+    }
+    .navbar .links{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width:20%;        
+    }
+    .navbar .logo{
+        width:50%;        
+    }
+    .navbar .search{
+        width:70%;        
+    }
+    .navbar2 > ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        font-size: 13px;
+    }
+    .search input {
+        border: none;
+        padding: 5px 5px;
+        width: 90%;
+    }
+    .about-content .about-head::before {
+        content: '';
+        position: absolute;
+        background-color: var(--top-color);
+        width: 29.3%;
+        height: 2px;
+        left: 0;
+        top: -5px;
+        z-index: 1;
+    }
+    .main-product .product-item .card{
+        width: 50%;
+        /* border: 2px solid red; */
+        padding: 0 10px;
+        margin-bottom: 100px;
+    }
+    .main-girl .girl p{
+        color:white;
+        padding-left: 20px;
+        font-family: var(--mon);
+        width:100%;
+    }
+    .main-discount .discount .discount-text p{
+        padding-left:25px;
+        font-size: 17px;
+    }
+    .footer .footer-1 {
+        width: 100%;
+        order:2;
+        margin-top: 76px;
+    }
+    .footer .footer-2{
+        width:100%;    
+        order:1;  
+        margin-top:10px;
+    }
+    .footer .footer-3{
+        width:100%;  
+        order:3; 
+        margin-top: 76px;   
+    }
+    .main-footer .footer .footer-2  .footer-link p{
+        color: var(--gold-color);
+        width: auto;
+        text-align: center;
+    }
+    .copyright .design{
+        width:100%;
+        color: white;
+        font-family: var(--pop);
+    }
+    .copyright .company-card {
+        display: flex;
+        color: white;
+        margin-top: 10px;
+    }
+    .about-content .about-head::after {
+        content: '';
+        position: absolute;
+        background-color: white;
+        width: 1%;
+        height: 2px;
+        left: 53px;
+        top: -5px;
+        z-index: 2;
+    }
+    .about-img{
+        width:100%;
+        margin-top: 20%;
+    }
+    .about-img .img-1 {
+    width: 100%;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: -26px;
+    }
+    .about-img .img-2 {
+        width: 90%;
+        height: auto;
+        position: absolute;
+        top: 39%;
+        margin-top: 10;
+    }
+    .about-div .about-content{
+        width:100%;
+    }
+    .pro-section {
+        margin-top: 70%;
+    }
+    .navbar2 > ul > li {
+        margin: 10px 5px;
+    }
+    .main-girl .girl {
+        background-image: url(../images/Layer\ 2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px !important;
+    }
+    .main-banner .banner .baner-text h1 {
+        color: white;
+        font-size: 10px;
+    }
+    .main-banner .banner .baner-text {
+        position: relative;
+        text-shadow: 2px 2px var(--top-color);
+        bottom: 94px;
+        left: 1px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-banner .banner .btn button {
+        background-color: grey;
+        color: var(--gold-color);
+        width: 81px;
+        height: 26px;
+        border: none;
+        font-size: 10px;
+    }
+    .navbar2 > ul > li {
+        font-size: 7px;
+        /* margin: 10px 40px; */
+    }
+    .about-img .img-1 img {
+        width: 287px;
+        height: 50%;
+    }
+    .about-img .img-2 img {
+        width: 285px;
+        height: 50%;
+    }
+    .about-img .img-2 {
+        width: 50%;
+        height: auto;
+        position: absolute;
+        top: 150%;
+        left: 10px;
+    }
+    .about-content p {
+        width: 100%;
+        font-size: 13px;
+    }
+    .about-section {
+        display: block;
+        margin-top: 50px;
+        padding: 0px;
+    }
+    .navbar .logo img {
+        width: 85%;
+        height: auto;
+    }
+    .main-product .pro-head h1 {
+        font-weight: 100;
+        font-size: 26px;
+        font-family: var(--mon);
+        text-align: center;
+        position: relative;
+    }
+    .main-product .pro-head h1::after {
+        content: '';
+        position: absolute;
+        background-color: white;
+        width: 2%;
+        height: 2px;
+        left: 51%;
+        top: -15px;
+        z-index: 2;
+    }
+    .main-product .pro-head h1::before {
+        content: '';
+        position: absolute;
+        background-color: black;
+        width: 10%;
+        height: 2px;
+        left: 45%;
+        top: -15px;
+        z-index: 1;
+    }
+    .product-item .card img {
+        width: 100%;
+    }
+    .main-product .product-item .card p {
+        font-size: 13px;
+        padding-top: 10px;
+        font-family: var(--pop);
+    }
+    .main-product .product-item .card h6 {
+        font-size: 14px;
+        padding-top: 10px;
+        font-family: var(--pop);
+    }
+    .main-product .container .btn button {
+        background-color: var(--top-color);
+        color: white;
+        width: 81px;
+        height: 22px;
+        border: none;
+        font-size: 10px;
+    }
+    .about-img .img-1 {
+        width: 50%;
+        margin-right: 10px;
+        position: absolute;
+        left: 13%;
+    }
+    .readmorebtn {
+        background-color: var(--top-color);
+        padding: 0px 0px !important;
+        border: none;
+        color: white;
+        width: 66px;
+        height: 22px;
+        font-size: 8px;
+      
+    }
+    .main-girl .girl h2 {
+        padding-top: 60px;
+        color: white;
+        padding-left: 20px;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    .main-discount .discount .discount-text h1 {
+        font-size: 20px;
+        padding-left: 20px;
+        color: var(--top-color);
+        font-family: var(--mon);
+    }
+    .main-discount .discount .discount-search input {
+        padding-left: 14px;
+        width: 174px;
+        height: 40px;
+    }
+    .main-discount .discount .discount-search button {
+        width: 104px;
+        height: 38px;
+        background-color: black;
+        color: white;
+        font-size: 13px;
+    }
+    header .top-nav p {
+        text-align: center !important;
+        font-size: 13px;
+        color: var(--gold-color);
+    }
+    .navbar2 > ul > li {
+        font-family: var(--mon);
+        font-size: 15px;
+        margin:10px 40px;
+        font-weight: bolder !important;
+    }
+    .about-content  p{
+        width: 80%;
+        font-size: 20px;
+    }
+}
